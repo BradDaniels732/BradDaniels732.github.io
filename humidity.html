@@ -50,72 +50,70 @@
     <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 mt-4 ml-4 mr-1">
       <div class="card img-responsive">
         <div class="card-body">
-          <h2 class="card-title MyFancyText">Summary: Latitude vs. X</h2>
+          <h2 class="card-title MyFancyText">Humidity</h2>
           <hr>
           <div class="container">
-            <img src="Resources/assets/images/Fig1.png" align="left" class="w-25 h-25 img-fluid no_border">
-            <p class="card-text">The purpose of this project was to analyze how weather changes as you get closer
-               to the equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap API
-               to assemble a dataset on over 500 cities.</p>
-               <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.  
-                Factors we looked at included temperature, cloudiness, wind speed and humidity.  
-                This site provides the source data and visualizations created as part of the analysis, 
-                as well as explanations and descriptions of any trends and correlations witnessed.
+            <img src="Resources/assets/images/Fig2.png" align="center" class="img-fluid ">
+            <p class="card-text">More cities have humidity above 60% than below it, with even a higher concentration
+              between 80 and 100 percent.  Very few cities have humitidy below 40%.  There appears to be some data 
+              problems with the readings for a few cities with latitude between 60 and 80 degrees, as they recorded
+              zero humidity, which is extremely unlikely, if not impossible.
             </p>
           </div>
         </div>
       </div>
     </div>
-
     <!-- This section controls the 4 thumbnail visualizations, which are on the right
         for the large screen size, and below the prior card for the medium and smaller screen sizes-->
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-4">
-      <div class="card">
-        <div class="card-body">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-4">
+            <div class="card">
+              <div class="card-body">
+      
+                <!-- Clicking on the title "Visualizations" will take the user to the Comparison Page-->
+                <a href="comparison.html"><h3 class="card-title MyFancyText">Visualizations</h3></a>
+                <hr>
 
-          <!-- Clicking on the title "Visualizations" will take the user to the Comparison Page-->
-          <a href="comparison.html"><h3 class="card-title MyFancyText">Visualizations</h3></a>
-          <hr>
-
-          <!-- Used the trick of column wrapping here with the 4 images 
-              In Large mode, the row is defined with 24 cells, so it will wrap to 2 rows of 12
-              For Medium and small, it will become one row of 12 cells -->
-
-          <!-- Also, I made each graph a hyperlink to it's corresponding "Plot" page -->
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
-                <div class="thumbnail border border-white">
-                  <a href="maxtemp.html">
-                    <img src="Resources/assets/images/Fig1.png" alt="..." class="img-fluid border border-white">
-                  </a>
-                </div>
-              </div>
-              <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
-                <div class="thumbnail border border-white">
-                  <a href="humidity.html">
-                    <img src="Resources/assets/images/Fig2.png" alt="..." class="img-fluid border border-white">
-                  </a>
-                </div>
-              </div>
-              <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
-                <div class="thumbnail border border-white">
-                  <a href="cloudiness.html">
-                   <img src="Resources/assets/images/Fig3.png" alt="..." class="img-fluid border border-white">
-                  </a>
-                </div>
-              </div>
-              <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
-                <div class="thumbnail border border-white">
-                  <a href="windspeed.html">
-                   <img src="Resources/assets/images/Fig4.png" alt="..." class="img-fluid border border-white">
-                  </a>
+                <!-- Used the trick of column wrapping here with the 4 images 
+                    In Large mode, the row is defined with 24 cells, so it will wrap to 2 rows of 12
+                    For Medium and small, it will become one row of 12 cells -->
+      
+                <!-- Also, I made each graph a hyperlink to it's corresponding "Plot" page -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
+                      <div class="thumbnail border border-white">
+                        <a href="maxtemp.html">
+                          <img src="Resources/assets/images/Fig1.png" alt="..." class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
+                      <div class="thumbnail border border-primary">
+                        <a href="humidity.html">
+                          <img src="Resources/assets/images/Fig2.png" alt="..." class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
+                      <div class="thumbnail border border-white">
+                        <a href="cloudiness.html">
+                         <img src="Resources/assets/images/Fig3.png" alt="..." class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
+                      <div class="thumbnail border border-white">
+                        <a href="windspeed.html">
+                         <img src="Resources/assets/images/Fig4.png" alt="..." class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+
+      
     </div>
   </div>
 
